@@ -34,6 +34,7 @@ router.post("/contact", limiter, async (req, res) => {
     //bot
     if(pot2miel){
         res.status(200).json({message: "Message envoyé !"})
+        return
     }
 
     try {
